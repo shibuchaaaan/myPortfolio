@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/* PC(large screen) first CSS. */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Yu Gothic', 'Poppins', sans-serif;
+  color: #222;
+  background-color: #eceef0;
+}
+
+/* googleフォント */
+.wf-roundedmplus1c { font-family: "M PLUS Rounded 1c"; }
+
+/* navigation bar */
+.logo-box {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+.logowave {
+  opacity: .4;
+  position: absolute;
+  left: 50%;
+  background: #0af;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -30px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+}
+.logowave.-three {
+  animation: drift 5000ms infinite linear;
+}
+.logowave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: .1;
+  background: rgb(255, 251, 0);
+}
+.logo-box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+.logo-title {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .4em;
+  font-size: 14px;
+  text-indent: .3em;
+}
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+.navbar {
+  padding: .6rem;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+.nav-item a {
+  text-decoration: none;
+}
+
+/* top banner */
+.top_banner img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+/* welcome */
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+/* three column section */
+.fa-code {
+  color: #e54d26;
+}
+.fa-js-square {
+  color: #fabb0c;
+}
+.fa-php {
+  color: #2c68ac;
+}
+.fa-code, .fa-js-square, .fa-php {
+  font-size: 4em;
+  margin: 1rem;
+}
+
+/* Connect */
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-instagram {
+  color: #517fa4;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
+  color: #d5d5d5;
+}
+
+.fa-chevron-circle-up {
+  display: none;
+  position: fixed;
+  right: 3%;
+  bottom: 10%;
+  font-size: 50px;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+footer a {
+  color: #d5d5d5;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+
+  }
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+  
+}
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 160%;
+  }
+
+  .social a {
+    font-size: 2em;
+    padding: .7rem;
+  }
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
