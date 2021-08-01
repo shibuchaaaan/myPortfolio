@@ -1,89 +1,276 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# prefix属性: http://ogp.me/ns/website#">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.8.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.8.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.8.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.8.1/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.8.1/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.8.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.8.1/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.8.1/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.8.1/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.8.1/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@ShibuchaaaanE" />
+	<meta property="og:url" content="https://myportfolioproject-3881c.web.app/" />
+	<meta property="og:title" content="にわみきのポートフォリオサイト" />
+	<meta property="og:description" content="バックエンドエンジニア にわみきのポートフォリオサイトです。" />
+	<meta property="og:image" content="https://myportfolioproject-3881c.web.app/img/top_banner.png" />
+		
+	<meta property="og:url" content="https://myportfolioproject-3881c.web.app/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="にわみき" />
+	<meta property="og:description" content="にわみきのポートフォリオサイト" />
+	<meta property="og:site_name" content="にわみき" />
+	<meta property="og:image" content="img/portofolio.png" />
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+	<title>にわみき</title>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+	<script src="js/script.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a href="#" class="navbar-brand">
+			<div class="logo-box">
+				<div class="logowave -one"></div>
+				<div class="logowave -two"></div>
+				<div class="logowave -three"></div>
+				<div class="logo-title">Miki<br>Niwa</div>
+			</div>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto wf-roundedmplus1c">
+				<li class="nav-item active">
+					<a href="index.html" class="nav-link">Home</a>
+				</li>
+				<!-- <li class="nav-item">
+					<a href="https://shibuchaaaan.hatenablog.com/" target="_blank" class="nav-link">Blog</a>
+				</li> -->
+				<li class="nav-item">
+					<a href="http://shibuchaaaan.php.xdomain.jp/contactForm.php" class="nav-link">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- top image -->
+<div id="top_banner" class="container-fluid text-center">
+	<img src="img/top_banner.png" alt="top_image" class="img-fluid">
+</div>
+
+<!--- Welcome Section -->
+<div class="container-fluid padding wf-roundedmplus1c">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Hello,World!</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead">
+				バックエンドエンジニア にわみき のポートフォリオサイトです。
+			</p>
+		</div>
+	</div>
+</div>
+
+<!--- Three Column Section -->
+<div class="container-fluid padding wf-roundedmplus1c">
+	<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fas fa-code"></i>
+			<h3>HTML,CSS</h3>
+			<p>このポートフォリオサイトは<br>
+				HTML, CSS, Bootstrap, jQuery<br>
+				で制作しました。</p>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<i class="fab fa-php"></i>
+			<h3>PHP</h3>
+			<p>PHPを使って、WordPress制作や<br>
+				データのやり取りの実装ができます。<br>
+				Laravel, Phalconを主に使っています。
+			</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fab fa-js-square"></i>
+			<h3>JavaScript</h3>
+			<p>JavaScript(jQuery)を使って、<br>
+				動的Webサイト制作<br>
+				ができます。</p>
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding wf-roundedmplus1c">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<h2>Who am I?</h2>
+			<br>
+			<p>都内でバックエンドエンジニアとして働いています。にわみきです。</p>
+			<p>
+				コピーバンドでベース弾いてます。<br>
+				好きな音楽は、 サカナクション・RADWIMPS・ASIAN KUNG-FU GENERATION・サザンオールスターズ・東京事変・その他アニソン等。
+			</p>
+			<p>麺類が大好きです。特にとんこつラーメンがお気に入り。棺桶に生麺入れて燃やしてほしい。</p>
+			<p>2018年までは建築系の営業職でした。エンジニアに転職して人生楽しい。</p>
+			<br>
+		</div>
+		<div class="col-lg-6">
+			<img class="img-fluid" src="img/bass2.jpg" alt="my-image">
+		</div>
+	</div>
+</div>
+
+<hr class="my-4">
+  
+<!--- Meet the team -->
+<div class="container-fluid padding wf-roundedmplus1c">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Works</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding wf-roundedmplus1c">
+	<div class="row padding">
+
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/today-fooday.png" alt="today-fooday">
+				<div class="card-body">
+					<h4 class="card-title">today-fooday</h4>
+					<p class="card-text">
+						2018.12：プログラミング学習を独学ではじめ、
+						営業の仕事をしながら約3ヶ月程で製作。JavaScript使用。
+					</p>
+					<a href="http://today-fooday.work/" class="btn btn-outline-secondary" target="_blank">See More</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/tax-quiz.png" alt="tax-quiz">
+				<div class="card-body">
+					<h4 class="card-title">軽減税率クイズ</h4>
+					<p class="card-text">
+						2019.10：PHPとAjax処理が分かってきたので製作。
+						意外な物が軽減税率対象だったりする。
+					</p>
+					<a href="http://shibuchaaaan.php.xdomain.jp/" class="btn btn-outline-secondary" target="_blank">See More</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/portofolio.png" alt="portofolio">
+				<div class="card-body">
+					<h4 class="card-title">Portfolio Website</h4>
+					<p class="card-text">
+						かっこいいポートフォリオサイト作るのが夢です。
+						イケてる画像を作れる<a href="https://www.canva.com/" target="_blank">Canva</a>に感謝、感謝です。
+					</p>
+					<a href="#" class="btn btn-outline-secondary">See More</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/personal_edge.png" alt="personaledge">
+				<div class="card-body">
+					<h4 class="card-title">WordPress企業サイト（企業様案件）</h4>
+					<p class="card-text">
+						2020.4：WordPressにて、レスポンシブ対応の企業サイト構築。
+						一からWordPressテーマを独自開発し、制作。
+					</p>
+					<a href="https://personal-edge.com/" class="btn btn-outline-secondary" target="_blank">See More</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/mochi.png" alt="mochi">
+				<div class="card-body">
+					<h4 class="card-title">WordPressコンテンツサイト（企業様案件）</h4>
+					<p class="card-text">
+						2020.5：WordPressにてコンテンツサイト構築。
+						お客様のご要望に合わせて既存テーマを拡張し、制作。
+					</p>
+					<a href="https://www.mochi-inc.jp/contents/" class="btn btn-outline-secondary" target="_blank">See More</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding wf-roundedmplus1c">
+		<div class="row padding">
+			<div class="col-lg-6">
+				<h2>Policy</h2>
+				<br>
+				<p>人生楽しく。</p>
+				<p>
+					美味しいもの、 <br>
+					美味しいお酒、<br>
+					音楽、あとWebがあれば<br>
+					人生楽しい。
+				</p>
+				<br>
+			</div>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="img/niagara.JPG" alt="bootstrap-image">
+			</div>
+		</div>
+		<hr class="my-4">
+	</div>
+
+<!--- Connect -->
+<div class="container-fluid padding wf-roundedmplus1c">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h2>Social</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="https://www.facebook.com/miki.shibue.1" target="_blank"><i class="fab fa-facebook"></i></a>
+			<a href="https://twitter.com/ShibuchaaaanE" target="_blank"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.instagram.com/tonkotsu_shibu" target="_blank"><i class="fab fa-instagram"></i></a>
+		</div>
+	</div>
+</div>
+
+<div id="scrollTop">
+	<i class="fas fa-chevron-circle-up"></i>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding wf-roundedmplus1c">
+		<div class="row text-center">
+			<div class="col-12">
+				<h5>&copy; miki.niwa</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
 </html>
